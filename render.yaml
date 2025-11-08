@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: deepseek-bot
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python main.py
+    envVars:
+      - key: BOT_TOKEN
+        value: ваш_токен_от_BotFather
+      - key: DS_API_KEY  
+        value: ваш_ключ_от_DeepSeek
